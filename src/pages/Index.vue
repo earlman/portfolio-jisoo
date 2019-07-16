@@ -1,22 +1,24 @@
 <template>
 	<Layout>
-		<div class="left"></div>
-		<h1>hello</h1>
-		<p>I'm Jisoo and I design things.</p>
+		<div slot="header">This is the Header</div>
+		<div slot="main">
+			<h1>hello</h1>
+		</div>
+		<div slot="footer">This is the Footer</div>
+		<div slot="right">
+			<p>Should show up on the right</p>
+			<g-image src="~/../img/cover.jpg" width="800"></g-image>
+		</div>
+
+		<p>I'm Jisoo and I design things. This should show up in the default location (the left)</p>
 	</Layout>
 </template>
 
 <script>
-import Author from "~/components/Author.vue";
-import PostCard from "~/components/PostCard.vue";
-
 export default {
-	components: {
-		Author,
-		PostCard
-	},
+	components: {},
 	metaInfo: {
-		title: "Hello, world!"
+		title: "I Design Graphics"
 	}
 };
 </script>

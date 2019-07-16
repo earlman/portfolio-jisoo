@@ -1,9 +1,19 @@
 <template>
 	<div>
-		<template slot="header">TODO: this should be moved to own component</template>
-		<template slot="main"></template>
-		<template slot="footer">TODO: this should be moved to own component</template>
-		<p>hi</p>
+		<header>
+			<slot name="header">TODO: this should be moved to own component</slot>
+		</header>
+		<main>
+			<div class="left">
+				<slot>Default Slot</slot>
+			</div>
+			<div class="right">
+				<slot name="right"></slot>
+			</div>
+		</main>
+		<footer>
+			<slot name="footer">TODO: this should be moved to own component</slot>
+		</footer>
 	</div>
 </template>
 
@@ -23,6 +33,18 @@ export default {
 </script>
 
 <style lang="scss">
+main {
+	display: flex;
+	justify-content: center;
+}
+
+.left {
+	width: 50vw;
+}
+.right {
+	width: 50vw;
+}
+
 .header {
 	display: flex;
 	justify-content: space-between;
