@@ -1,0 +1,28 @@
+// This system uses mobile-first approach
+
+
+/*=============================================
+/*=              Define Variables             =
+/*=============================================*/    
+/* NOTE: SASS variables are used in this file to allow variable use within the media query selectors */
+
+$screen-md-min: 768px // Tablets
+$screen-lg-min: 992px // Laptops
+$screen-xl-min: 1440px // Desktop Computers
+
+    
+/*===================================================
+/*=      Create Mixin to @include Media Query       =
+/*=================================================*/        
+
+@mixin md
+    @media (min-width: #{$screen-md-min})
+        @content
+
+@mixin lg
+    @media (min-width: #{$screen-lg-min})
+        @content
+
+@mixin xl
+    @media (min-width: #{$screen-xl-min})  
+        @content
