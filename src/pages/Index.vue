@@ -1,7 +1,8 @@
 <template>
-	<Layout :show-logo="true">
-		<!-- Author intro -->
-		<Author :show-title="true" />
+	<Layout>
+		<div class="left"></div>
+		<h1>hello</h1>
+		<p>I'm Jisoo and I design things.</p>
 	</Layout>
 </template>
 
