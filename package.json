@@ -1,5 +1,5 @@
 {
-    "name": "Jisoo Portfolio",
+    "name": "jisoo-portfolio",
     "private": true,
     "scripts": {
         "start": "gridsome develop",
