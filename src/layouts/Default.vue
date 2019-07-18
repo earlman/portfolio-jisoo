@@ -3,10 +3,10 @@
 		<Header />
 		<main>
 			<div class="left">
-				<slot>Default Slot</slot>
+				<slot name="left">Left Slot</slot>
 			</div>
 			<div class="right">
-				<!-- <slot name="right"></slot> -->
+				<slot name="right">Right Slot</slot>
 			</div>
 		</main>
 		<footer>
@@ -34,31 +34,6 @@ export default {
 </script>
 
 <style lang="sass">
-
-// .layout
-//     display: flex
-//     flex-flow: column
-//     align-items: stretch
-//     min-height: 100vh
-//     flex-wrap: wrap
-
-
-// main 
-//     display: flex
-//     position: relative
-//     top: 50%
-//     justify-content: center
-//     flex-grow: 1
-
-//     &>div
-//         border: 1px solid var(--color-R400)
-//         min-width: 400px
-//         flex-grow: 1
-//         flex-basis: 50vw
-
-//     .right
-//         background-color: var(--color-N400)
-
 
 .layout
     display: grid
@@ -91,17 +66,16 @@ main
     flex-grow: 1
 
     &>div
-        border: 1px solid var(--color-R400)
         min-width: 400px
         flex-grow: 1
         flex-basis: 50vw
 
 .left
-    background-color: var(--color-R400)
+    // background-color: var(--color-R400)
     opacity: .8
 
 .right
-    background-color: var(--color-Y400)
+    // background-color: var(--color-Y400)
     opacity: .8
 
 
