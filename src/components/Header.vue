@@ -1,20 +1,28 @@
 <template>
-	<header>
-		<div class="logo">
-			<g-image src="~/../img/logo.svg" class="logo" width="100" fit="contain"></g-image>
-		</div>
-		<nav class="main_nav">
-			<ul>
-				<li>about</li>
-				<li>projects</li>
-				<li>contact</li>
-			</ul>
-		</nav>
-	</header>
+	<div class="header-container">
+		<header>
+			<div class="logo">
+				<Logo viewBox="0 0 1798 726" />
+			</div>
+			<nav class="main_nav">
+				<ul>
+					<li>about</li>
+					<li>projects</li>
+					<li>contact</li>
+				</ul>
+			</nav>
+		</header>
+	</div>
 </template>
 
 <script>
-export default {};
+import Logo from "~/../img/logo.svg";
+
+export default {
+	components: {
+		Logo
+	}
+};
 </script>
 
 <style lang="sass" scoped>
@@ -22,7 +30,36 @@ export default {};
 .logo
     width: 10rem
 
+    svg
+        width: 100%
+        height: auto
+
+        path
+            fill: var(--color-text-b-l)
+
+.header-container
+    @include grid-template
+    background-color: var(--color-N400)
+
+
 header
-    border: 1px solid black
+    @include grid-full
+    display: flex
+    justify-content: space-between
+    align-content: center
+
+.main_nav
+    @include text(lg)
+    
+    ul
+        list-style-type: none
+        display: flex
+        place-items: center
+        height: 100%
+
+    li
+        @include space-inline(4rem)
+        color: var(--color-text-b-l)
+        font-weight: 300
 
 </style>
