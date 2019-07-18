@@ -1,16 +1,19 @@
 <template>
 	<Layout>
-		<div slot="header">This is the Header</div>
-		<div slot="main">
-			<h1>hello</h1>
+		<div slot="left">
+			<h1>what do i do?</h1>
+			<ul>
+				<li>+graphic design</li>
+				<li>+marketing</li>
+				<li>+photography</li>
+			</ul>
 		</div>
-		<div slot="footer">This is the Footer</div>
 		<div slot="right">
-			<p>Should show up on the right</p>
-			<g-image src="~/../img/cover.jpg" width="800"></g-image>
+			<div class="button-large">graphic design</div>
+			<div class="button-large">instagram</div>
+			<div class="button-large">email campaign</div>
+			<!-- <g-image src="~/../img/cover.jpg" width="800"></g-image> -->
 		</div>
-
-		<p>I'm Jisoo and I design things. This should show up in the default location (the left)</p>
 	</Layout>
 </template>
 
