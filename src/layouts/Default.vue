@@ -1,16 +1,14 @@
 <template>
 	<div>
-		<header>
-			<slot name="header">TODO: this should be moved to own component</slot>
-		</header>
-		<main>
+		<Header />
+		<!-- <main>
 			<div class="left">
 				<slot>Default Slot</slot>
 			</div>
 			<div class="right">
 				<slot name="right"></slot>
 			</div>
-		</main>
+		</main>-->
 		<footer>
 			<slot name="footer">TODO: this should be moved to own component</slot>
 		</footer>
@@ -20,6 +18,7 @@
 <script>
 import Logo from "~/components/Logo.vue";
 import ToggleTheme from "~/components/ToggleTheme.vue";
+import Header from "~/components/Header.vue";
 
 export default {
 	props: {
@@ -27,7 +26,8 @@ export default {
 	},
 	components: {
 		Logo,
-		ToggleTheme
+		ToggleTheme,
+		Header
 	}
 };
 </script>
