@@ -28,18 +28,18 @@ export default {
 <style lang="sass" scoped>
 
 .logo
-    width: 10rem
+    width: 8rem
 
     svg
         width: 100%
         height: auto
 
         path
-            fill: var(--color-text-b-l)
+            fill: var(--color-text-h)
 
 .header-container
     @include grid-template
-    background-color: var(--color-N400)
+    // background-color: var(--color-N400)
 
 
 header
