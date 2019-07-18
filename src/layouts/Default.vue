@@ -1,17 +1,18 @@
 <template>
-	<div>
+	<div class="layout">
 		<Header />
-		<!-- <main>
+		<main>
 			<div class="left">
 				<slot>Default Slot</slot>
 			</div>
 			<div class="right">
-				<slot name="right"></slot>
+				<!-- <slot name="right"></slot> -->
 			</div>
-		</main>-->
+		</main>
 		<footer>
 			<slot name="footer">TODO: this should be moved to own component</slot>
 		</footer>
+		<div class="background-color"></div>
 	</div>
 </template>
 
@@ -32,60 +33,76 @@ export default {
 };
 </script>
 
-<style lang="scss">
-main {
-	display: flex;
-	justify-content: center;
-}
+<style lang="sass">
 
-.left {
-	width: 50vw;
-}
-.right {
-	width: 50vw;
-}
+// .layout
+//     display: flex
+//     flex-flow: column
+//     align-items: stretch
+//     min-height: 100vh
+//     flex-wrap: wrap
 
-.header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	min-height: var(--header-height);
-	padding: 0 calc(var(--space) / 2);
-	top: 0;
-	z-index: 10;
 
-	&__left,
-	&__right {
-		display: flex;
-		align-items: center;
-	}
+// main 
+//     display: flex
+//     position: relative
+//     top: 50%
+//     justify-content: center
+//     flex-grow: 1
 
-	@media screen and (min-width: 1300px) {
-		//Make header sticky for large screens
-		position: sticky;
-		width: 100%;
-	}
-}
+//     &>div
+//         border: 1px solid var(--color-R400)
+//         min-width: 400px
+//         flex-grow: 1
+//         flex-basis: 50vw
 
-.main {
-	margin: 0 auto;
-	padding: 1.5vw 15px 0;
-}
+//     .right
+//         background-color: var(--color-N400)
 
-.footer {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: calc(var(--space) / 2);
-	text-align: center;
-	font-size: 0.8em;
 
-	> span {
-		margin: 0 0.35em;
-	}
+.layout
+    display: grid
+    grid-template-columns: 1fr 1fr
+    // 'auto' sets the header and footer to content height, 1fr stretches the middle area
+    grid-template-rows: auto 1fr auto
+    height: 100vh
 
-	a {
-		color: currentColor;
-	}
-}
+    .header-container
+        grid-row: 1
+        grid-column: 1/-1
+
+    main
+        grid-row: 2
+        grid-column: 1/-1
+
+    footer
+        grid-row: 3
+        grid-column: 1/-1
+
+    .background-color
+        grid-row: 1/4
+        grid-column: 2
+        background-color: var(--color-N400)
+        z-index: -1
+
+main 
+    display: flex
+    justify-content: center
+    flex-grow: 1
+
+    &>div
+        border: 1px solid var(--color-R400)
+        min-width: 400px
+        flex-grow: 1
+        flex-basis: 50vw
+
+.left
+    background-color: var(--color-R400)
+    opacity: .8
+
+.right
+    background-color: var(--color-Y400)
+    opacity: .8
+
+
 </style>
