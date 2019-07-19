@@ -9,9 +9,7 @@
 				<slot name="right">Right Slot</slot>
 			</div>
 		</main>
-		<footer>
-			<slot name="footer">TODO: this should be moved to own component</slot>
-		</footer>
+		<footer></footer>
 		<div class="background-color"></div>
 	</div>
 </template>
@@ -33,7 +31,7 @@ export default {
 };
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
 
 .layout
     display: grid
@@ -62,11 +60,14 @@ export default {
 
 main 
     display: flex
+    flex-wrap: wrap
     justify-content: center
     flex-grow: 1
 
     &>div
         min-width: 400px
+        max-width: 700px
+        margin: var(--space-md)
         flex-grow: 1
         flex-basis: 50vw
 
@@ -77,6 +78,9 @@ main
 .right
     // background-color: var(--color-Y400)
     opacity: .8
+
+    *
+        color: white
 
 
 </style>
