@@ -70,6 +70,8 @@ main
         margin: var(--space-md)
         flex-grow: 1
         flex-basis: 50vw
+        display: grid
+        place-items: center
 
 .left
     // background-color: var(--color-R400)
