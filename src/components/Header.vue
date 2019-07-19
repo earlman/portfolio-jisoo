@@ -35,7 +35,7 @@ export default {
         height: auto
 
         path
-            fill: var(--color-text-h)
+            fill: var(--color-N500)
 
 .header-container
     @include grid-template
