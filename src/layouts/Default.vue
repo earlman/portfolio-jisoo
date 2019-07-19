@@ -39,6 +39,11 @@ export default {
     // 'auto' sets the header and footer to content height, 1fr stretches the middle area
     grid-template-rows: auto 1fr auto
     height: 100vh
+    width: 100vw
+
+    @include portrait
+        grid-template-columns: 1fr
+
 
     .header-container
         grid-row: 1
@@ -53,7 +58,7 @@ export default {
         grid-column: 1/-1
 
     .background-color
-        grid-row: 1/4
+        grid-row: 1/-1
         grid-column: 2
         background-color: var(--color-N400)
         z-index: -1
