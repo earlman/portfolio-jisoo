@@ -2,13 +2,21 @@
 	<div class="header-container">
 		<header>
 			<div class="logo">
-				<Logo viewBox="0 0 1798 726" />
+				<g-link to="/">
+					<Logo viewBox="0 0 1798 726" />
+				</g-link>
 			</div>
 			<nav class="main_nav">
 				<ul>
-					<li>about</li>
-					<li>projects</li>
-					<li>contact</li>
+					<li>
+						<g-link to="/about" active-class="active">about</g-link>
+					</li>
+					<li>
+						<g-link to="/projects" active-class="active">projects</g-link>
+					</li>
+					<li>
+						<g-link to="/contact" active-class="active">contact</g-link>
+					</li>
 				</ul>
 			</nav>
 		</header>
@@ -49,7 +57,7 @@ header
     align-content: center
 
 .main_nav
-    @include text(lg)
+
     
     ul
         list-style-type: none
@@ -59,7 +67,24 @@ header
 
     li
         @include space-inline(4rem)
+
+    a   
+        @include text(lg)
         color: var(--color-text-b-l)
         font-weight: 300
+        opacity: .7
+        transition: all 0.4s ease
+
+
+        // &:hover
+        //     font-weight: 400
+        
+        &:hover
+            opacity: 1
+
+        &.active
+            font-weight: 700
+            opacity: 1
+
 
 </style>
