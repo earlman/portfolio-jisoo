@@ -33,7 +33,7 @@ export default {
 .index
     h1
         font-weight: 700
-        color: var(--color-N400)
+        color: var(--color-N600)
 
     li
         @include text(xl)
