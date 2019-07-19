@@ -59,5 +59,6 @@ export default {
     border-radius: 2px
     width: 25ch
     text-align: center
+    color: white
 
 </style>
