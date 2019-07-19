@@ -1,14 +1,17 @@
 <template>
 	<div class="layout">
 		<Header />
-		<main>
-			<div class="left">
-				<slot name="left">Left Slot</slot>
-			</div>
-			<div class="right">
-				<slot name="right">Right Slot</slot>
-			</div>
-		</main>
+		<transition name="fade" appear>
+			<main>
+				<div class="left">
+					<slot name="left">Left Slot</slot>
+				</div>
+				<div class="right">
+					<slot name="right">Right Slot</slot>
+				</div>
+			</main>
+		</transition>
+
 		<footer></footer>
 		<div class="background-color"></div>
 	</div>
@@ -32,6 +35,13 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+
+.fade-enter-active 
+  transition: opacity .5s
+
+.fade-enter 
+  opacity: 0
+
 
 .layout
     display: grid
@@ -80,14 +90,8 @@ main
 
 .left
     // background-color: var(--color-R400)
-    opacity: .8
 
 .right
     // background-color: var(--color-Y400)
-    opacity: .8
-
-    *
-        color: white
-
 
 </style>
