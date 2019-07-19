@@ -70,13 +70,13 @@ main
     flex-grow: 1
 
     &>div
-        min-width: 400px
+        min-width: 250px
         max-width: 700px
         margin: var(--space-md)
         flex-grow: 1
         flex-basis: 50vw
-        display: grid
-        place-items: center
+        display: flex
+        justify-content: center
 
 .left
     // background-color: var(--color-R400)
