@@ -3,9 +3,15 @@
 		<div slot="left">
 			<h1>work</h1>
 			<ul>
-				<li>+graphic design</li>
-				<li>+marketing</li>
-				<li>+photography</li>
+				<g-link to="/work/graphic-design">
+					<li>+graphic design</li>
+				</g-link>
+				<g-link to="/work/email-templating">
+					<li>+email templating</li>
+				</g-link>
+				<g-link to="/work/instagram-management">
+					<li>+instagram management</li>
+				</g-link>
 			</ul>
 		</div>
 	</Layout>
