@@ -34,10 +34,11 @@ export default {
 };
 </script>
 
-<style lang="sass" scoped>
+<style lang="sass">
+// took off 'scoped' in order to style parent files
 
 .fade-enter-active 
-  transition: opacity .5s
+  transition: opacity .8s
 
 .fade-enter 
   opacity: 0
@@ -90,8 +91,17 @@ main
 
 .left
     // background-color: var(--color-R400)
+    &>div
+        display: flex
+        flex-direction: column
+        justify-content: center
+
 
 .right
     // background-color: var(--color-Y400)
-
+    &>div
+        display: flex
+        flex-direction: column
+        justify-content: center
+        
 </style>
