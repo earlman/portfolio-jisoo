@@ -1,9 +1,10 @@
 <template>
-	<Layout class="marketing">
+	<Layout class="graphic-design">
 		<div slot="left">
-			<h1>+marketing</h1>
+			<h1>+marketing graphics</h1>
 		</div>
 		<div slot="right">
+			<p>oh ya look at me go</p>
 			<!-- <g-image src="~/../img/cover.jpg" width="800"></g-image> -->
 		</div>
 	</Layout>

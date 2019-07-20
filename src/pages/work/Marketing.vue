@@ -1,10 +1,9 @@
 <template>
-	<Layout class="graphic-design">
+	<Layout class="instagram-management">
 		<div slot="left">
-			<h1>+graphic design</h1>
+			<h1>+instagram management</h1>
 		</div>
 		<div slot="right">
-			<p>oh ya look at me go</p>
 			<!-- <g-image src="~/../img/cover.jpg" width="800"></g-image> -->
 		</div>
 	</Layout>

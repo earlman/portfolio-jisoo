@@ -12,7 +12,7 @@
 						<g-link to="/about" active-class="active">about</g-link>
 					</li>
 					<li>
-						<g-link to="/projects" active-class="active">projects</g-link>
+						<g-link to="/work" active-class="active">work</g-link>
 					</li>
 					<li>
 						<g-link to="/contact" active-class="active">contact</g-link>

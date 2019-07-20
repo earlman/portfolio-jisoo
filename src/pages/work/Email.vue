@@ -1,9 +1,10 @@
 <template>
-	<Layout class="about">
+	<Layout class="email">
 		<div slot="left">
-			<h1>About me</h1>
+			<h1>+email design</h1>
 		</div>
 		<div slot="right">
+			<p>oh ya look at me go</p>
 			<!-- <g-image src="~/../img/cover.jpg" width="800"></g-image> -->
 		</div>
 	</Layout>

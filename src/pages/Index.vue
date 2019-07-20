@@ -1,13 +1,6 @@
 <template>
 	<Layout class="index">
-		<div slot="left">
-			<h1>what do i do?</h1>
-			<ul>
-				<li>+graphic design</li>
-				<li>+marketing</li>
-				<li>+photography</li>
-			</ul>
-		</div>
+		<div slot="left"></div>
 		<div slot="right">
 			<div class="button-container">
 				<div class="button-large">graphic design</div>
@@ -29,21 +22,6 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-
-.index
-    h1
-        font-weight: 700
-        color: var(--color-N600)
-
-    li
-        @include text(xl)
-        font-weight: 500
-        list-style-type: none
-        color: var(--color-N070)
-
-    ul
-        padding: 0
-
 
 .button-container
     display: flex
