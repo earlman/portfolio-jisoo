@@ -1,9 +1,10 @@
 <template>
-	<Layout class="about">
+	<Layout class="graphic-design">
 		<div slot="left">
-			<h1>what do i do?</h1>
+			<h1>+graphic design</h1>
 		</div>
 		<div slot="right">
+			<p>oh ya look at me go</p>
 			<!-- <g-image src="~/../img/cover.jpg" width="800"></g-image> -->
 		</div>
 	</Layout>

@@ -1,5 +1,12 @@
 <template>
-	<Layout class="contact">Contact Page</Layout>
+	<Layout class="contact">
+		<div slot="left">
+			<h1>contact</h1>
+		</div>
+		<div slot="right">
+			<!-- <g-image src="~/../img/cover.jpg" width="800"></g-image> -->
+		</div>
+	</Layout>
 </template>
 
 <script>

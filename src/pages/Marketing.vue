@@ -1,7 +1,7 @@
 <template>
-	<Layout class="about">
+	<Layout class="marketing">
 		<div slot="left">
-			<h1>what do i do?</h1>
+			<h1>+marketing</h1>
 		</div>
 		<div slot="right">
 			<!-- <g-image src="~/../img/cover.jpg" width="800"></g-image> -->
