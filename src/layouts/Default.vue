@@ -20,7 +20,6 @@
 
 <script>
 import Logo from "~/components/Logo.vue";
-import ToggleTheme from "~/components/ToggleTheme.vue";
 import Header from "~/components/Header.vue";
 
 export default {
@@ -29,7 +28,6 @@ export default {
 	},
 	components: {
 		Logo,
-		ToggleTheme,
 		Header
 	}
 };
