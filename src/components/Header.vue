@@ -47,10 +47,13 @@ export default {
 
 .header-container
     @include grid-template
+    position: sticky
+    top: 0
     // background-color: var(--color-N400)
 
 
 header
+
     @include grid-full
     display: flex
     justify-content: space-between
