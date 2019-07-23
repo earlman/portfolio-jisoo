@@ -6,7 +6,7 @@
 			<p>I plan montly sales plans and set weekly email campaigns.</p>
 		</div>
 		<div slot="right">
-			<p>oh ya look at me go</p>
+			<div class="p">oh ya look at me go</div>
 			<FeatureImage></FeatureImage>
 		</div>
 	</Layout>
@@ -16,5 +16,8 @@
 export default {};
 </script>
 
-<style lang="scss" scoped>
+<style lang="sass" scoped>
+.p
+    display: grid
+    height: 2000px
 </style>

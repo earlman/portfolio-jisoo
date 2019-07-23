@@ -53,6 +53,7 @@ header
         height: 100%
         display: flex
         justify-content: center
+        padding: 0
 
     li
         flex-grow: 1        
