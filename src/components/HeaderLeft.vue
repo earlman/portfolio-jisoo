@@ -23,7 +23,7 @@ export default {
 <style lang="sass" scoped>
 
 .logo
-    width: 8rem
+    width: 6rem
 
     svg
         width: 100%
@@ -34,14 +34,17 @@ export default {
 
 .header-container
     position: sticky
+    width: 100%
     top: 0
     // background-color: var(--color-N400)
 
+    grid-column: 1/-1
 
 header
     max-width: 700px
     display: flex
     justify-content: center
     align-content: center
+    max-height: 90px
 
 </style>

@@ -4,11 +4,15 @@
 			<main>
 				<div class="left">
 					<HeaderLeft />
-					<slot name="left">Left Slot</slot>
+					<div class="content-area">
+						<slot name="left">Left Slot</slot>
+					</div>
 				</div>
 				<div class="right">
 					<HeaderRight />
-					<slot name="right">Right Slot</slot>
+					<div class="content-area">
+						<slot name="right">Right Slot</slot>
+					</div>
 				</div>
 			</main>
 		</transition>
@@ -58,12 +62,32 @@ main
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
 
     &>div
-        display: flex
-        flex-direction: column       
+
+        
+
+.left
+    display: grid      
+    grid-template-columns: 1fr minmax(250px, 700px)
+    grid-template-rows: auto 1fr
+
+    .content-area
+        width: 100%
+        grid-row: 2
+        grid-column: 2
+        align-self: center
 
 .right
     background-color: var(--color-N400)
+    display: grid
     height: 100vh
     overflow: auto
+    grid-template-columns: minmax(250px, 700px) 1fr
+    grid-template-rows: auto 1fr
+
+    .content-area
+        width: 100%
+        grid-row: 2
+        grid-column: 1
+        align-self: center
 
 </style>

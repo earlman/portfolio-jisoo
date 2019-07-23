@@ -33,13 +33,16 @@ export default {
 .header-container
     position: sticky
     top: 0
+    width: 100%
     // background-color: var(--color-N400)
+    grid-column: 1/-1
 
 
 header
     max-width: 700px
     display: flex
     justify-content: center
+    max-height: 90px
 
 .main_nav  
     width: 100%
