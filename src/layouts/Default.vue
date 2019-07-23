@@ -2,14 +2,14 @@
 	<div class="layout">
 		<Header />
 		<transition name="fade" appear>
-			<main>
-				<div class="left">
-					<slot name="left">Left Slot</slot>
-				</div>
-				<div class="right">
-					<slot name="right">Right Slot</slot>
-				</div>
-			</main>
+		<main>
+			<div class="left">
+				<slot name="left">Left Slot</slot>
+			</div>
+			<div class="right">
+				<slot name="right">Right Slot</slot>
+			</div>
+		</main>
 		</transition>
 
 		<footer></footer>
@@ -69,16 +69,23 @@ export default {
         grid-column: 1/-1
 
     .background-color
-        grid-row: 1/-1
-        grid-column: 2
-        background-color: var(--color-N400)
-        z-index: -1
+
+        @include landscape
+            grid-row: 1/-1
+            grid-column: 2
+            background-color: var(--color-N400)
+            z-index: -1
 
 main 
-    display: flex
+    display: grid
+    grid-template-columns: 1
     flex-wrap: wrap
     justify-content: center
     flex-grow: 1
+
+    @include landscape
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+
 
     &>div
         min-width: 250px
