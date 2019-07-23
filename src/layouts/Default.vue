@@ -3,11 +3,11 @@
 		<transition name="fade" appear>
 			<main>
 				<div class="left">
-					<Header />
+					<HeaderLeft />
 					<slot name="left">Left Slot</slot>
 				</div>
 				<div class="right">
-					<Header />
+					<HeaderRight />
 					<slot name="right">Right Slot</slot>
 				</div>
 			</main>
@@ -20,7 +20,8 @@
 
 <script>
 import Logo from "~/components/Logo.vue";
-import Header from "~/components/Header.vue";
+import HeaderLeft from "~/components/HeaderLeft.vue";
+import HeaderRight from "~/components/HeaderRight.vue";
 
 export default {
 	props: {
@@ -28,7 +29,8 @@ export default {
 	},
 	components: {
 		Logo,
-		Header
+		HeaderLeft,
+		HeaderRight
 	}
 };
 </script>
