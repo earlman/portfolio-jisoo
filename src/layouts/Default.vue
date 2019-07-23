@@ -51,6 +51,7 @@ export default {
     grid-template-rows: auto 1fr auto
     height: 100vh
     width: 100vw
+    max-width: 100% //fixes problem with horizontal scrollbar appearing
 
     @include portrait
         grid-template-columns: 1fr
@@ -63,6 +64,7 @@ export default {
     main
         grid-row: 2
         grid-column: 1/-1
+
 
     footer
         grid-row: 3
@@ -83,6 +85,7 @@ main
     justify-content: center
     flex-grow: 1
 
+
     @include landscape
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
 
@@ -97,7 +100,6 @@ main
         justify-content: center
 
 .left
-    // background-color: var(--color-R400)
     &>div
         display: flex
         flex-direction: column
@@ -105,7 +107,8 @@ main
 
 
 .right
-    // background-color: var(--color-Y400)
+    
+
     &>div
         display: flex
         flex-direction: column

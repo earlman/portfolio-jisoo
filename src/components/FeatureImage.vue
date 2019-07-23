@@ -22,7 +22,9 @@ export default {
 <style lang="sass" scoped>
 
 .feature-image
+    
     img
         border-radius: 3px
+        max-width: 100%
 
 </style>
