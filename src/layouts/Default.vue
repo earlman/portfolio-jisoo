@@ -2,14 +2,14 @@
 	<div class="layout">
 		<Header />
 		<transition name="fade" appear>
-		<main>
-			<div class="left">
-				<slot name="left">Left Slot</slot>
-			</div>
-			<div class="right">
-				<slot name="right">Right Slot</slot>
-			</div>
-		</main>
+			<main>
+				<div class="left">
+					<slot name="left">Left Slot</slot>
+				</div>
+				<div class="right">
+					<slot name="right">Right Slot</slot>
+				</div>
+			</main>
 		</transition>
 
 		<footer></footer>
@@ -78,7 +78,7 @@ export default {
 
 main 
     display: grid
-    grid-template-columns: 1
+    grid-template-columns: 1fr
     flex-wrap: wrap
     justify-content: center
     flex-grow: 1
@@ -110,5 +110,7 @@ main
         display: flex
         flex-direction: column
         justify-content: center
+
+
 
 </style>
