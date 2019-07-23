@@ -12,7 +12,7 @@
 			</main>
 		</transition>
 
-		<footer></footer>
+		<!-- <footer></footer> -->
 		<div class="background-color"></div>
 	</div>
 </template>
@@ -78,28 +78,33 @@ export default {
             background-color: var(--color-N400)
             z-index: -1
 
-main 
-    display: grid
-    grid-template-columns: 1fr
-    flex-wrap: wrap
-    justify-content: center
-    flex-grow: 1
-
-
-    @include landscape
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
-
-
-    &>div
-        min-width: 250px
-        max-width: 700px
-        margin: var(--space-md)
-        flex-grow: 1
-        flex-basis: 50vw
-        display: flex
+    main 
+        display: grid
+        grid-template-columns: 1fr
+        flex-wrap: wrap
         justify-content: center
+        flex-grow: 1
+
+        height: 100% //test
+        overflow: scroll
+
+        @include landscape
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+
+
+        &>div
+            min-width: 250px
+            max-width: 700px
+            margin: var(--space-md)
+            flex-grow: 1
+            flex-basis: 50vw
+            display: flex
+            justify-content: center
+
+            height: 100%
 
 .left
+
     &>div
         display: flex
         flex-direction: column
@@ -107,7 +112,6 @@ main
 
 
 .right
-    
 
     &>div
         display: flex

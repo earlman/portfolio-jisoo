@@ -46,13 +46,15 @@ export default {
             fill: var(--color-N500)
 
 .header-container
+    @include grid-template
     position: sticky
     top: 0
     // background-color: var(--color-N400)
 
 
 header
-    width: 100%
+
+    @include grid-full
     display: flex
     justify-content: space-between
     align-content: center
