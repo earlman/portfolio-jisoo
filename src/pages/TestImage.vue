@@ -11,11 +11,9 @@
 
 <script>
 import FeatureImage from "~/components/FeatureImage";
-import NewDefault from "~/layouts/NewDefault";
 export default {
 	components: {
-		FeatureImage,
-		NewDefault
+		FeatureImage
 	}
 };
 </script>

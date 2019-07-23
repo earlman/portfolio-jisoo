@@ -1,12 +1,13 @@
 <template>
-	<div class="layout">
-		<Header />
+	<div class>
 		<transition name="fade" appear>
 			<main>
 				<div class="left">
+					<Header />
 					<slot name="left">Left Slot</slot>
 				</div>
 				<div class="right">
+					<Header />
 					<slot name="right">Right Slot</slot>
 				</div>
 			</main>
@@ -34,7 +35,7 @@ export default {
 };
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
 // took off 'scoped' in order to style parent files
 
 .fade-enter-active 
@@ -45,79 +46,24 @@ export default {
 
 
 .layout
+    display: flex
+    flex-direction: column
+
+main
     display: grid
-    grid-template-columns: 1fr 1fr
-    // 'auto' sets the header and footer to content height, 1fr stretches the middle area
-    grid-template-rows: auto 1fr auto
-    height: 100vh
-    width: 100vw
-    max-width: 100% //fixes problem with horizontal scrollbar appearing
+    grid-template-columns: 1fr
+    align-content: stretch
 
-    @include portrait
-        grid-template-columns: 1fr
-
-
-    .header-container
-        grid-row: 1
-        grid-column: 1/-1
-
-    main
-        grid-row: 2
-        grid-column: 1/-1
-
-
-    footer
-        grid-row: 3
-        grid-column: 1/-1
-
-    .background-color
-
-        @include landscape
-            grid-row: 1/-1
-            grid-column: 2
-            background-color: var(--color-N400)
-            z-index: -1
-
-    main 
-        display: grid
-        grid-template-columns: 1fr
-        flex-wrap: wrap
-        justify-content: center
-        flex-grow: 1
-
-        height: 100% //test
-        overflow: scroll
-
-        @include landscape
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
-
-
-        &>div
-            min-width: 250px
-            max-width: 700px
-            margin: var(--space-md)
-            flex-grow: 1
-            flex-basis: 50vw
-            display: flex
-            justify-content: center
-
-            height: 100%
-
-.left
+    @include landscape
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
 
     &>div
         display: flex
-        flex-direction: column
-        justify-content: center
-
+        flex-direction: column       
 
 .right
-
-    &>div
-        display: flex
-        flex-direction: column
-        justify-content: center
-
-
+    background-color: var(--color-N400)
+    height: 100vh
+    overflow: auto
 
 </style>
