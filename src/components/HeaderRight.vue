@@ -30,16 +30,6 @@ export default {
 
 <style lang="sass" scoped>
 
-.logo
-    width: 8rem
-
-    svg
-        width: 100%
-        height: auto
-
-        path
-            fill: var(--color-N500)
-
 .header-container
     position: sticky
     top: 0
@@ -47,22 +37,22 @@ export default {
 
 
 header
-    width: 100%
+    max-width: 700px
     display: flex
-    justify-content: space-between
-    align-content: center
+    justify-content: center
 
-.main_nav
+.main_nav  
+    width: 100%
 
-    
+
     ul
         list-style-type: none
-        display: flex
-        place-items: center
         height: 100%
+        display: flex
+        justify-content: center
 
     li
-        @include space-inline(4rem)
+        flex-grow: 1        
 
     a   
         @include text(lg)

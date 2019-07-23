@@ -39,40 +39,9 @@ export default {
 
 
 header
-    width: 100%
+    max-width: 700px
     display: flex
-    justify-content: space-between
+    justify-content: center
     align-content: center
-
-.main_nav
-
-    
-    ul
-        list-style-type: none
-        display: flex
-        place-items: center
-        height: 100%
-
-    li
-        @include space-inline(4rem)
-
-    a   
-        @include text(lg)
-        color: var(--color-text-b-l)
-        font-weight: 300
-        opacity: .7
-        transition: all 0.4s ease
-
-
-        // &:hover
-        //     font-weight: 400
-        
-        &:hover
-            opacity: 1
-
-        &.active
-            font-weight: 700
-            opacity: 1
-
 
 </style>
