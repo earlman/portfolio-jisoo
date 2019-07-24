@@ -8,7 +8,7 @@
 						<slot name="left">Left Slot</slot>
 					</div>
 				</div>
-				<div class="right">
+				<div class="right" :class="{ background : cover }">
 					<HeaderRight />
 					<div class="content-area">
 						<slot name="right">Right Slot</slot>
@@ -29,7 +29,7 @@ import HeaderRight from "~/components/HeaderRight.vue";
 
 export default {
 	props: {
-		showLogo: { default: true }
+		cover: { type: Boolean, default: false }
 	},
 	components: {
 		Logo,
@@ -95,5 +95,12 @@ main
     padding: 5vw
     align-self: center
     width: 100%
+
+// TODO: make conditional class
+.background
+    background: url('/cover_photo.jpg') no-repeat
+    background-size: auto 100%
+    background-position: left
+
 
 </style>

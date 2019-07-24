@@ -1,11 +1,11 @@
 <template>
-	<Layout class="index">
+	<Layout class="index" cover="true">
 		<div slot="left">
 			<h1>hello</h1>
 			<h3>I'm Jisoo & I design things</h3>
 		</div>
 		<div slot="right">
-			<FeatureImage img_path="/cover_photo.jpg"></FeatureImage>
+			<!-- <FeatureImage img_path="/cover_photo.jpg" cover></FeatureImage> -->
 		</div>
 	</Layout>
 </template>
