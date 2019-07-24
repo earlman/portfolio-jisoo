@@ -1,7 +1,7 @@
 <template>
 	<Layout class="projects">
 		<div slot="left">
-			<h1>work</h1>
+			<h1>what do i do?</h1>
 			<!-- <ul>
 				<g-link to="/work/graphic-design">
 					<li>+graphic design</li>
@@ -19,11 +19,11 @@
 				<g-link to="/work/graphic-design">
 					<div class="button-large">graphic design</div>
 				</g-link>
-				<g-link to="/work/email-templating">
-					<div class="button-large">instagram</div>
-				</g-link>
 				<g-link to="/work/instagram-management">
-					<div class="button-large">email campaign</div>
+					<div class="button-large">instagram management</div>
+				</g-link>
+				<g-link to="/work/email-campaigns">
+					<div class="button-large">email campaigns</div>
 				</g-link>
 			</div>
 		</div>
@@ -50,20 +50,19 @@ ul
     padding: 0
 
 .button-container
-    display: flex
-    flex-direction: column
-    align-items: center
+    display: grid
+    grid-template-columns: repeat(auto-fill, 1fr)
 
     &>*
         @include space-stack(var(--space-md))
 
 
 .button-large
-    @include text(xl)
+    @include text(lg)
     border: 5px solid var(--color-text-b-l)
     display: inline-block
     border-radius: 5px
-    width: 20ch
+    width: 25ch
     text-align: center
     color: white
     padding: var(--space-md)
