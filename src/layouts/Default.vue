@@ -43,7 +43,7 @@ export default {
 // took off 'scoped' in order to style parent files
 
 .fade-enter-active 
-    transition: opacity .8s
+    transition: opacity .6s ease-out
 
 .fade-enter 
     opacity: 0
