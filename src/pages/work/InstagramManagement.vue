@@ -10,13 +10,19 @@
 			</button>
 		</div>
 		<div slot="right">
-			<!-- <g-image src="~/../img/cover.jpg" width="800"></g-image> -->
+			<FeatureImage img_path="/instagram.jpg"></FeatureImage>
 		</div>
 	</Layout>
 </template>
 
 <script>
-export default {};
+import FeatureImage from "~/components/FeatureImage";
+
+export default {
+	components: {
+		FeatureImage
+	}
+};
 </script>
 
 <style lang="scss" scoped>
