@@ -1,5 +1,5 @@
 <template>
-	<div class="feature-image">
+	<div class="feature-image" :class="{ cover: cover }">
 		<img :src="img_path" :alt="alt" />
 	</div>
 </template>
@@ -14,6 +14,10 @@ export default {
 		alt: {
 			type: String,
 			default: "feature image"
+		},
+		cover: {
+			type: Boolean,
+			default: false
 		}
 	}
 };
@@ -22,9 +26,11 @@ export default {
 <style lang="sass" scoped>
 
 .feature-image
-    
     img
         border-radius: 5px
         max-width: 100%
+
+.cover
+
 
 </style>
