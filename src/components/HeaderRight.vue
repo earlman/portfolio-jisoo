@@ -39,24 +39,25 @@ export default {
 
 
 header
-    max-width: 700px
     display: flex
-    justify-content: center
-    max-height: 90px
+    max-height: 100px
+
+    @include portrait
+        justify-content: center
 
 .main_nav  
     width: 100%
-
 
     ul
         list-style-type: none
         height: 100%
         display: flex
-        justify-content: center
+        justify-content: flex-end
         padding: 0
 
     li
-        flex-grow: 1        
+        flex-grow: 1
+        max-width: 16ch
 
     a   
         @include transition

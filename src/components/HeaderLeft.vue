@@ -24,6 +24,7 @@ export default {
 
 .logo
     width: 6rem
+    margin-left: 2rem
 
     svg
         width: 100%
@@ -41,10 +42,10 @@ export default {
     grid-column: 1/-1
 
 header
-    max-width: 700px
     display: flex
-    justify-content: center
     align-content: center
-    max-height: 90px
+    max-height: 100px
 
+    @include portrait
+        justify-content: center
 </style>
