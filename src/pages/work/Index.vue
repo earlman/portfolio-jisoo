@@ -59,14 +59,16 @@ ul
 
 
 .button-large
-    @include space-squish(4rem)
     @include text(xl)
     border: 5px solid var(--color-text-b-l)
     display: inline-block
-    border-radius: 3px
-    width: 25ch
+    border-radius: 5px
+    width: 20ch
     text-align: center
     color: white
+    padding: var(--space-md)
+
+
 
     &:hover
         

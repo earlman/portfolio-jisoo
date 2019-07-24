@@ -24,7 +24,7 @@ export default {
 .feature-image
     
     img
-        border-radius: 3px
+        border-radius: 5px
         max-width: 100%
 
 </style>
