@@ -54,6 +54,7 @@ main
     display: grid
     grid-template-columns: 1fr
     align-content: stretch
+    min-height: 100vh
 
     // max-height: 100vh
     // overflow: hidden
