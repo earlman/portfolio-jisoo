@@ -4,14 +4,19 @@
 			<h1>+email design</h1>
 		</div>
 		<div slot="right">
-			<p>oh ya look at me go</p>
-			<!-- <g-image src="~/../img/cover.jpg" width="800"></g-image> -->
+			<FeatureImage img_path="/code.png"></FeatureImage>
 		</div>
 	</Layout>
 </template>
 
 <script>
-export default {};
+import FeatureImage from "~/components/FeatureImage";
+
+export default {
+	components: {
+		FeatureImage
+	}
+};
 </script>
 
 <style lang="scss" scoped>
