@@ -1,13 +1,13 @@
 <template>
 	<div class="feature-image">
-		<img :src="image_path" :alt="alt" />
+		<img :src="img_path" :alt="alt" />
 	</div>
 </template>
 
 <script>
 export default {
 	props: {
-		image_path: {
+		img_path: {
 			type: String,
 			default: "/instantglam-nude-natural.jpg"
 		},
