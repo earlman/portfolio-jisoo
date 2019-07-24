@@ -8,7 +8,10 @@
 			</button>
 		</div>
 		<div slot="right">
-			<FeatureImage img_path="/code.png"></FeatureImage>
+			<FeatureImage img_path="/calendar.png"></FeatureImage>(waiting on calendar screenshot)
+			<g-link to="/work/email-examples">
+				<button>see email examples</button>
+			</g-link>
 		</div>
 	</Layout>
 </template>
