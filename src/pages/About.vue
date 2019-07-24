@@ -8,13 +8,19 @@
 			<p>I love to experience and learn new things - design related or not.</p>
 		</div>
 		<div slot="right">
-			<FeatureImage></FeatureImage>
+			<FeatureImage img_path="/cover_photo.jpg"></FeatureImage>
 		</div>
 	</Layout>
 </template>
 
 <script>
-export default {};
+import FeatureImage from "~/components/FeatureImage";
+
+export default {
+	components: {
+		FeatureImage
+	}
+};
 </script>
 
 <style lang="scss" scoped>
