@@ -2,7 +2,7 @@
 	<Layout class="projects">
 		<div slot="left">
 			<h1>work</h1>
-			<ul>
+			<!-- <ul>
 				<g-link to="/work/graphic-design">
 					<li>+graphic design</li>
 				</g-link>
@@ -12,13 +12,19 @@
 				<g-link to="/work/instagram-management">
 					<li>+instagram management</li>
 				</g-link>
-			</ul>
+			</ul>-->
 		</div>
 		<div slot="right">
 			<div class="button-container">
-				<div class="button-large">graphic design</div>
-				<div class="button-large">instagram</div>
-				<div class="button-large">email campaign</div>
+				<g-link to="/work/graphic-design">
+					<div class="button-large">graphic design</div>
+				</g-link>
+				<g-link to="/work/email-templating">
+					<div class="button-large">instagram</div>
+				</g-link>
+				<g-link to="/work/instagram-management">
+					<div class="button-large">email campaign</div>
+				</g-link>
 			</div>
 		</div>
 	</Layout>
@@ -48,16 +54,21 @@ ul
     flex-direction: column
     align-items: center
 
+    &>*
+        @include space-stack(var(--space-md))
+
+
 .button-large
-    @include space-stack(3rem)
     @include space-squish(4rem)
     @include text(xl)
     border: 5px solid var(--color-text-b-l)
     display: inline-block
-    border-radius: 2px
+    border-radius: 3px
     width: 25ch
     text-align: center
     color: white
 
+    &:hover
+        
 
 </style>
