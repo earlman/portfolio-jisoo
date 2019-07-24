@@ -24,10 +24,14 @@ export default {};
 <style lang="sass" scoped>
 
 li
+    @include transition
     @include text(xl)
     font-weight: 500
     list-style-type: none
     color: var(--color-N070)
+
+    &:hover
+        color: var(--color-N200)
     
 ul
     padding: 0

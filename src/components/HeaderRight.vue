@@ -59,11 +59,11 @@ header
         flex-grow: 1        
 
     a   
+        @include transition
         @include text(lg)
         color: var(--color-text-b-l)
         font-weight: 300
         opacity: .7
-        transition: all 0.4s ease
 
 
         // &:hover
