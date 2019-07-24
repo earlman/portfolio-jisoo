@@ -1,5 +1,5 @@
 <template>
-	<Layout class="instagram-management" cover="true">
+	<Layout class="instagram-management">
 		<div slot="left">
 			<h1>instagram management</h1>
 			<p>I manage the Instagram page for iKateHouse.com. I research and analyze trends for social media accounts and also take note of which posts do well. I then gather inspiration from other similar accounts to plan how I want to take images. I look at the angle at which the photo is taken, certain backgrounds, and shadows. Then I go through our inventory and see which items can be marketed through Instagram and request the items for the photoshoot.</p>
