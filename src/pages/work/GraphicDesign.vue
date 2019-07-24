@@ -1,7 +1,7 @@
 <template>
 	<Layout class="graphic-design">
 		<div slot="left">
-			<h1>+marketing graphics</h1>
+			<h1>+graphic design</h1>
 			<p>I direct and organize photoshoots for the social media profiles, edit the photographs, and schedule posts.</p>
 			<p>I plan montly sales plans and set weekly email campaigns.</p>
 		</div>
