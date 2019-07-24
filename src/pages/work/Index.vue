@@ -14,6 +14,13 @@
 				</g-link>
 			</ul>
 		</div>
+		<div slot="right">
+			<div class="button-container">
+				<div class="button-large">graphic design</div>
+				<div class="button-large">instagram</div>
+				<div class="button-large">email campaign</div>
+			</div>
+		</div>
 	</Layout>
 </template>
 
@@ -35,5 +42,22 @@ li
     
 ul
     padding: 0
+
+.button-container
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.button-large
+    @include space-stack(3rem)
+    @include space-squish(4rem)
+    @include text(xl)
+    border: 5px solid var(--color-text-b-l)
+    display: inline-block
+    border-radius: 2px
+    width: 25ch
+    text-align: center
+    color: white
+
 
 </style>
