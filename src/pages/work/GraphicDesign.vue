@@ -6,14 +6,19 @@
 			<p>I plan montly sales plans and set weekly email campaigns.</p>
 		</div>
 		<div slot="right">
-			<div class="p">oh ya look at me go</div>
-			<FeatureImage></FeatureImage>
+			<FeatureImage ></FeatureImage>
 		</div>
 	</Layout>
 </template>
 
 <script>
-export default {};
+import FeatureImage from "~/components/FeatureImage";
+
+export default {
+	components: {
+		FeatureImage
+	}
+};
 </script>
 
 <style lang="sass" scoped>
