@@ -25,13 +25,7 @@ import FeatureImage from "~/components/FeatureImage";
 export default {
 	data() {
 		return {
-			images: [
-				"/graphics/lashes-1.jpg",
-				"/graphics/lashes-2.jpg",
-				"/graphics/lashes-3.jpg",
-				"/graphics/lashes-4.jpg",
-				"/graphics/lashes-5.jpg"
-			]
+			images: ["/graphics/lashes.jpg"]
 		};
 	},
 	components: {
