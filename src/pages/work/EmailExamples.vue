@@ -1,8 +1,10 @@
 <template>
 	<Layout>
 		<div slot="left">
-			<button @click="changeDisplay(`weekday`)">weekday</button>
-			<button @click="changeDisplay(`weekend`)">weekend</button>
+			<div class="button-container">
+				<button @click="changeDisplay(`weekday`)">weekday</button>
+				<button @click="changeDisplay(`weekend`)">weekend</button>
+			</div>
 			<div v-for="page in pages" :key="page.id" class="display-area">
 				<FeatureImage :img_path="page.img_code" v-if="page.name==current_page" />
 			</div>
@@ -54,7 +56,13 @@ export default {
 
 <style lang="sass" scoped>
 
-button
-    margin: 0 var(--space-xs) var(--space-xs) 0    
+.button-container
+    display: flex
+    justify-content: center
+    padding-bottom: var(--space-xs)
+
+    &>*
+        @include space-inline(var(--space-xs))
+
 
 </style>
