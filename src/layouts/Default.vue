@@ -8,9 +8,10 @@
 						<slot name="left">Left Slot</slot>
 					</div>
 				</div>
-				<div class="right" :class="{ background : cover }">
+
+				<div class="right" :class="[{ background : cover } ]">
 					<HeaderRight :darktext="darktext" />
-					<div class="content-area">
+					<div class="content-area" :class="{ full : fillright }">
 						<slot name="right">Right Slot</slot>
 					</div>
 				</div>
@@ -30,7 +31,8 @@ import HeaderRight from "~/components/HeaderRight.vue";
 export default {
 	props: {
 		cover: { type: Boolean, default: false },
-		darktext: { type: Boolean, default: false }
+		darktext: { type: Boolean, default: false },
+		fillright: { type: Boolean, default: false }
 	},
 	components: {
 		Logo,
@@ -94,6 +96,9 @@ main
         grid-row: 2
         grid-column: 1
 
+        &.full
+            grid-column: 1/-1
+
 .content-area
     padding: 5vw
     align-self: center
@@ -105,7 +110,8 @@ main
     background-position: left
     background-color: rgba(255, 255, 255, 0.3)
     background-blend-mode: lighten
-    
+
+
 
 
 </style>
