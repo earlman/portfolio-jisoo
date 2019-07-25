@@ -54,5 +54,7 @@ export default {
 
 <style lang="sass" scoped>
 
+button
+    margin: 0 var(--space-xs) var(--space-xs) 0    
 
 </style>
