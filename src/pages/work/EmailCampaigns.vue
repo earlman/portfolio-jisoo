@@ -8,10 +8,13 @@
 			</button>
 		</div>
 		<div slot="right">
-			<FeatureImage img_path="/calendar.png"></FeatureImage>(waiting on calendar screenshot)
-			<g-link to="/work/email-examples">
-				<button>see email examples</button>
-			</g-link>
+			<div class="img_container">
+				<FeatureImage img_path="/schedule/salesplan1.png"></FeatureImage>
+				<FeatureImage img_path="/schedule/salesplan2.png"></FeatureImage>
+				<g-link to="/work/email-examples">
+					<button>see email examples</button>
+				</g-link>
+			</div>
 		</div>
 	</Layout>
 </template>
@@ -26,5 +29,12 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="sass" scoped>
+
+.img_container
+
+    &>*
+
+        @include space-stack(var(--space-md))
+
 </style>
