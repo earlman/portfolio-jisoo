@@ -10,7 +10,9 @@
 			</button>
 		</div>
 		<div slot="right">
-			<FeatureImage></FeatureImage>
+			<div v-for="path in images" :key="path.id">
+				<FeatureImage :img_path="path" />
+			</div>
 		</div>
 	</Layout>
 </template>
@@ -19,6 +21,17 @@
 import FeatureImage from "~/components/FeatureImage";
 
 export default {
+	data() {
+		return {
+			images: [
+				"/graphics/lashes-1.jpg",
+				"/graphics/lashes-2.jpg",
+				"/graphics/lashes-3.jpg",
+				"/graphics/lashes-4.jpg",
+				"/graphics/lashes-5.jpg"
+			]
+		};
+	},
 	components: {
 		FeatureImage
 	}
