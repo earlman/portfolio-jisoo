@@ -68,6 +68,8 @@ main
     grid-template-columns: 1fr minmax(250px, 700px)
     grid-template-rows: auto 1fr
     max-height: 100vh
+    overflow: hidden //! This should be fixed. causing most of the left image to be hidden in /work/email-examples 
+    
 
     @include landscape
         position: sticky
