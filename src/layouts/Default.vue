@@ -96,11 +96,13 @@ main
     align-self: center
     width: 100%
 
-// TODO: make conditional class
 .background
     background: url('/cover_photo.jpg') no-repeat
     background-size: auto 100%
     background-position: left
+    background-color: rgba(255, 255, 255, 0.3)
+    background-blend-mode: lighten
+    
 
 
 </style>
