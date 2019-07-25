@@ -10,8 +10,10 @@
 			</button>
 		</div>
 		<div slot="right">
-			<div v-for="path in images" :key="path.id">
-				<FeatureImage :img_path="path" />
+			<div class="img_container">
+				<div v-for="path in images" :key="path.id">
+					<FeatureImage :img_path="path" />
+				</div>
 			</div>
 		</div>
 	</Layout>
@@ -39,7 +41,9 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-.p
-    display: grid
-    height: 2000px
+
+.img_container
+    &>*
+        @include space-stack(var(--space-md))
+
 </style>
