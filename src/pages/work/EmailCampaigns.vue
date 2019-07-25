@@ -9,11 +9,11 @@
 		</div>
 		<div slot="right">
 			<div class="img_container">
-				<FeatureImage img_path="/schedule/salesplan1.png"></FeatureImage>
-				<FeatureImage img_path="/schedule/salesplan2.png"></FeatureImage>
 				<g-link to="/work/email-examples">
 					<button>see email examples</button>
 				</g-link>
+				<FeatureImage img_path="/schedule/salesplan1.png"></FeatureImage>
+				<FeatureImage img_path="/schedule/salesplan2.png"></FeatureImage>
 			</div>
 		</div>
 	</Layout>
