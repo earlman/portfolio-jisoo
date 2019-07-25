@@ -44,6 +44,6 @@ export default {
 
 .img_container
     &>*
-        @include space-stack(var(--space-md))
+        line-height: 1
 
 </style>
