@@ -1,7 +1,7 @@
 <template>
 	<div class="header-container">
 		<header>
-			<nav class="main_nav">
+			<nav class="main_nav" :class="{darktext: darktext }">
 				<ul>
 					<li>
 						<g-link to="/about" active-class="active">about</g-link>
@@ -22,6 +22,12 @@
 import Logo from "~/../img/logo.svg";
 
 export default {
+	props: {
+		darktext: {
+			type: Boolean,
+			default: false
+		}
+	},
 	components: {
 		Logo
 	}
@@ -77,5 +83,8 @@ header
             font-weight: 700
             opacity: 1
 
+    &.darktext
+        a
+            color: var(--color-text-h)
 
 </style>

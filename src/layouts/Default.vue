@@ -9,7 +9,7 @@
 					</div>
 				</div>
 				<div class="right" :class="{ background : cover }">
-					<HeaderRight />
+					<HeaderRight :darktext="darktext" />
 					<div class="content-area">
 						<slot name="right">Right Slot</slot>
 					</div>
@@ -29,7 +29,8 @@ import HeaderRight from "~/components/HeaderRight.vue";
 
 export default {
 	props: {
-		cover: { type: Boolean, default: false }
+		cover: { type: Boolean, default: false },
+		darktext: { type: Boolean, default: false }
 	},
 	components: {
 		Logo,

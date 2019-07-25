@@ -1,5 +1,5 @@
 <template>
-	<Layout class="about" cover="true">
+	<Layout class="about" cover="true" darktext="true">
 		<div slot="left">
 			<h1>who am i</h1>
 			<p>I am a graphic designer with a background in industrial design.</p>
